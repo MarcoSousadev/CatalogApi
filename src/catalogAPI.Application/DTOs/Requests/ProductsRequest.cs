@@ -1,9 +1,7 @@
-﻿namespace catalogAPI.Domain.Entities.Product
+﻿namespace catalogAPI.Application.DTOs.Requests
 {
-    public class Product
+    public class ProductsRequest
     {
-        public int Id { get; set; }
-
         public string Name { get; set; }
 
         public string Description { get; set; }

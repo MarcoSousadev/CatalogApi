@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using catalogAPI.Application.Interfaces;
+using catalogAPI.Infrastructure.Repositories;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace catalogAPI.Infrastructure
 {
@@ -12,7 +14,7 @@ namespace catalogAPI.Infrastructure
 
             public static void AddRepositories (IServiceCollection services)
             {
-
+                services.AddScoped<ICategoryRepository, CategoryRepository>();
             }
         }
  }
