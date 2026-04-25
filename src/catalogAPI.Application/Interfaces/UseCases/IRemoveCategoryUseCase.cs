@@ -8,5 +8,6 @@ namespace catalogAPI.Application.Interfaces
 {
     public interface IRemoveCategoryUseCase
     {
+        Task Execute(int id);
     }
 }
