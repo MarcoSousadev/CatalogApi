@@ -1,5 +1,5 @@
 ﻿using catalogAPI.Application.DTOs.Requests;
-using catalogAPI.Application.Interfaces;
+using catalogAPI.Application.Interfaces.Repositories;
 using catalogAPI.Domain.Entities.Category;
 using Dapper;
 using Microsoft.Data.SqlClient;
@@ -33,5 +33,7 @@ namespace catalogAPI.Infrastructure.Repositories
 
             return (Category)await connection.QueryAsync<Category>(query, new { Id = id });
         }
+
+
     }
 }

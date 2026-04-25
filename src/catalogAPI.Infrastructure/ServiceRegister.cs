@@ -1,4 +1,4 @@
-﻿using catalogAPI.Application.Interfaces;
+﻿using catalogAPI.Application.Interfaces.Repository;
 using catalogAPI.Infrastructure.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
