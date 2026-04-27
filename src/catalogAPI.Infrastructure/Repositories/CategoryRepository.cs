@@ -49,11 +49,11 @@ namespace catalogAPI.Infrastructure.Repositories
         {
             using var connection = new SqlConnection(_connectionString);
 
-            var jump = (pageNumber - 1) * pageQuantity;
+            var skip = (pageNumber - 1) * pageQuantity;
 
-            var query = "SELECT * FROM Categories OFFSET @Jump ROWS FETCH NEXT @Quantity ROWS ONLY";
+            var query = "SELECT * FROM Categories OFFSET @Skip ROWS FETCH NEXT @Quantity ROWS ONLY";
 
-            return await connection.QueryAsync<Category>(query, new { Jump = jump, Quantity = pageQuantity });
+            return await connection.QueryAsync<Category>(query, new { Skip = skip, Quantity = pageQuantity });
         }
 
 
