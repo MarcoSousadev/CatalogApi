@@ -1,5 +1,6 @@
 ﻿using catalogAPI.Application.DTOs.Requests;
 using catalogAPI.Application.Interfaces;
+using catalogAPI.Application.Interfaces.Repository;
 
 namespace catalogAPI.Application.UseCases.Categories
 {

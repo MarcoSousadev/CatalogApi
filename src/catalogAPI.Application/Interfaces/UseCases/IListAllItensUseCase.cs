@@ -1,4 +1,5 @@
 ﻿using catalogAPI.Application.DTOs.Responses;
+using catalogAPI.Domain.Entities.Category;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace catalogAPI.Application.Interfaces
 {
     public interface IListAllItensUseCase
     {
-        List<CategoryResponse> Execute(int pageNumber, int pagesQuantity);
+        Task<IEnumerable<Category>> Execute(int pageNumber, int pagesQuantity);
     }
 }

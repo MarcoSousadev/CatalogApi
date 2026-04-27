@@ -1,12 +1,19 @@
 ﻿using catalogAPI.Application.Interfaces;
+using catalogAPI.Application.Interfaces.Repository;
 
 namespace catalogAPI.Application.UseCases.Categories
 {
     public class RemoveCategoryUseCase : IRemoveCategoryUseCase
     {
-        public Task Execute(int id)
+        private readonly ICategoryRepository _repository;
+
+        public RemoveCategoryUseCase(ICategoryRepository repository)
         {
-            throw new NotImplementedException();
+            _repository = repository;
+        }
+        public async Task Execute(int id)
+        {
+            await _repository.DeleteCategory(id);
         }
     }
 }

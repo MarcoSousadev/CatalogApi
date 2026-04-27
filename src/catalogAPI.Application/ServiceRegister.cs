@@ -15,6 +15,9 @@ namespace catalogAPI.Application
         {
             services.AddScoped<ICreateCategoryUseCase, CreateCategoryUseCase>();
             services.AddScoped<IGetCategoryByIdUseCase, GetCategoryByIdUseCase>();
+            services.AddScoped<IUpdateCategoryUseCase, UpdateCategoryUseCase>();
+            services.AddScoped<IListAllItensUseCase, ListAllItensUseCase>();
+            services.AddScoped<IRemoveCategoryUseCase, RemoveCategoryUseCase>();
       
         }
     }
