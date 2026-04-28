@@ -1,6 +1,6 @@
 ﻿using catalogAPI.Application.DTOs.Requests;
 
-namespace catalogAPI.Application.Interfaces
+namespace catalogAPI.Application.Interfaces.UseCases.Categories
 {
     public interface ICreateCategoryUseCase
     {
