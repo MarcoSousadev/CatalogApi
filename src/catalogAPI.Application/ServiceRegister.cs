@@ -1,4 +1,5 @@
-﻿using catalogAPI.Application.Interfaces.UseCases.Categories;
+﻿using catalogAPI.Application.Interfaces;
+using catalogAPI.Application.Interfaces.UseCases.Categories;
 using catalogAPI.Application.Interfaces.UseCases.Products;
 using catalogAPI.Application.UseCases.Categories;
 using catalogAPI.Application.UseCases.Products;
@@ -21,11 +22,12 @@ namespace catalogAPI.Application
             services.AddScoped<IListAllItensUseCase, ListAllItensUseCase>();
             services.AddScoped<IRemoveCategoryUseCase, RemoveCategoryUseCase>();
 
+
             services.AddScoped<ICreateProductUseCase, CreateProductUseCase>();
             services.AddScoped<IGetProcutByIdUseCase, GetProductByIdUseCase>();
-            services.AddScoped<IDeleteProductUseCase,DeleteProductUseCase>();
+            services.AddScoped<IDeleteProductUseCase, DeleteProductUseCase>();
             services.AddScoped<IListAllItensPaginatedUseCase, ListAllItensPaginateUseCase>();
-            services.AddScoped<IUpdateCategoryUseCase, IUpdateCategoryUseCase>();
+            services.AddScoped<IUpdateProductUseCase, UpdateProductUseCase>();
 
         }
     }

@@ -2,6 +2,7 @@
 using catalogAPI.Application.DTOs.Responses;
 using catalogAPI.Application.Interfaces;
 using catalogAPI.Application.Interfaces.Repository;
+using catalogAPI.Application.Interfaces.UseCases.Categories;
 using catalogAPI.Domain.Entities.Category;
 
 namespace catalogAPI.Application.UseCases.Categories

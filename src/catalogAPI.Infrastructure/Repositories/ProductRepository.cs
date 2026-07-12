@@ -41,7 +41,7 @@ namespace catalogAPI.Infrastructure.Repositories
 
             var query = "SELECT * FROM Products OFFSET @Skip ROWS FETCH NEXT @Quantity ROWS ONLY ";
 
-            return await connection.QueryAsync<Product>(query, new { Skip = skip, Quantity = pageQuantity });
+            return await connection.QueryAsync<Product> (query, new { Skip = skip, Quantity = pageQuantity });
 
         }
 

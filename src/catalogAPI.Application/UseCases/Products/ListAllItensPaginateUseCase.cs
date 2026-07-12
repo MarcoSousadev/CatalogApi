@@ -19,7 +19,7 @@ namespace catalogAPI.Application.UseCases.Products
         }
         public async Task<IEnumerable<Product>> Execute(int page, int pageQuantity)
         {
-            await _repository.GetAllItensWithPagination(page, pageQuantity);
+            return await _repository.GetAllItensWithPagination(page, pageQuantity);
         }
     }
 }

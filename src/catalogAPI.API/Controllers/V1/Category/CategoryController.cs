@@ -1,5 +1,6 @@
 ﻿using catalogAPI.Application.DTOs.Requests;
 using catalogAPI.Application.Interfaces;
+using catalogAPI.Application.Interfaces.UseCases.Categories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

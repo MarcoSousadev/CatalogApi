@@ -1,5 +1,6 @@
 ﻿using catalogAPI.Application.Interfaces;
 using catalogAPI.Application.Interfaces.Repository;
+using catalogAPI.Application.Interfaces.UseCases.Categories;
 
 namespace catalogAPI.Application.UseCases.Categories
 {
